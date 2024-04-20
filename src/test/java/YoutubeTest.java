@@ -14,6 +14,7 @@ public void Result() {
         // This function will enter the search query
     youtubeSteps.YoutubeSearchButton.click();
         // This function will click the search button
-    TestUtils.pause(1000);        // This function will pause the test for 1 seconds
+    TestUtils.pause(3000);   
+        // This function will pause the test for 1 seconds
 }
 }

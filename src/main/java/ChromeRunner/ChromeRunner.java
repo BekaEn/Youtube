@@ -1,12 +1,8 @@
 package ChromeRunner;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import com.codeborne.selenide.Selenide;
-
-
 
 public class ChromeRunner {
     private WebDriver driver;
