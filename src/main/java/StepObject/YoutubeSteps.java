@@ -15,4 +15,9 @@ public class YoutubeSteps extends YoutubePageObject {
         YoutubeSearchButton.click();
         return this;
     }
+    @Step("Click on the video")
+    public YoutubeSteps ClickVideo() {
+        YoutubeClickVideo.click();
+        return this;
+    }
 }

@@ -15,6 +15,10 @@ public void Result() {
     youtubeSteps.YoutubeSearchButton.click();
         // This function will click the search button
     TestUtils.pause(3000);   
-        // This function will pause the test for 1 seconds
+        // This function will pause the test for 3 seconds
+    youtubeSteps.YoutubeClickVideo.click();
+        // This function will click the video
+    TestUtils.pause(10000);   
+        // This function will pause the test for 3 seconds
 }
 }
