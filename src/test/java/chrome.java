@@ -2,7 +2,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class SeleniumTest {
+public class chrome {
     @Test
     void Setup(){
         System.setProperty("chrome.driver", "Resources");
