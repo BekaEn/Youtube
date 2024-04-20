@@ -5,23 +5,26 @@ import PageObject.YoutubePageObject;
 import io.qameta.allure.Step;
 
 public class YoutubeSteps extends YoutubePageObject {
-    @Step("Click on Search button")
-    public YoutubeSteps clickSearch() {
-        SearchInput.click();
+    @Step("Enter search query: {0}")
+    public YoutubeSteps enterSearchQuery(String query) {
+        SearchInput.setValue(query).pressEnter();
         return this;
     }
-    @Step("Enter search query")
-    public YoutubeSteps ClickSearchButton() {
+
+    @Step("Click on Search button")
+    public YoutubeSteps clickSearch() {
         YoutubeSearchButton.click();
         return this;
     }
+
     @Step("Click on the video")
-    public YoutubeSteps ClickVideo() {
+    public YoutubeSteps clickVideo() {
         YoutubeClickVideo.click();
         return this;
     }
+
     @Step("Click on the Subscribe button")
-    public YoutubeSteps ClickSubscribe() {
+    public YoutubeSteps clickSubscribe() {
         ClickSubscribe.click();
         return this;
     }
