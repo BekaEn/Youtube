@@ -4,18 +4,17 @@ import ChromeRunner.ChromeRunner;
 import org.testng.annotations.Test;
 
 public class YoutubeTest extends ChromeRunner implements YoutubeData {
-    private YoutubeSteps youtubeSteps;
-
+    
     @Test
-    public void testResult() {
-        youtubeSteps.ClickSearch(Click);
-        // Add your assertions here
+public void Result() {
+    YoutubeSteps youtubeSteps = new YoutubeSteps();
+    try {
+        Thread.sleep(1000); // Wait for 3 seconds
+    } catch (InterruptedException e) {
+        e.printStackTrace();
     }
     
-    public void testSearch() {
-        Thread.sleep(3000); // Wait for 3 seconds
-        youtubeSteps.searchForVideo(searchQuery);
-        // Add your assertions here
-    }
-    
+    youtubeSteps.SearchInput.setValue("test").pressEnter();
+            // Add your assertions here
+}
 }
