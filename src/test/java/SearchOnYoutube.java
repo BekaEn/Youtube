@@ -19,9 +19,24 @@ public class SearchOnYoutube extends ChromeRunner{
         WebElement searchInput = searchBox.findElement(By.id("search"));
 
         // Type a search query into the search box
-        searchInput.sendKeys("Beka Enukidze");
+        searchInput.sendKeys("LISTEN EVERYDAY! I AM affirmations for coding|ComputerProgramming Affirmations|Coding Affirmations");
 
         // Submit the form
         searchInput.submit();
+        // Wait for the search results to load
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("video-title")));
+
+        // Find the link with the specific title and click on it
+        WebElement link = wait.until(ExpectedConditions.elementToBeClickable(By.partialLinkText("ComputerProgramming Affirmations|")));
+        link.click();
+
+        // Wait for the video to load
+        try {
+            Thread.sleep(7000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+
     }
 }
