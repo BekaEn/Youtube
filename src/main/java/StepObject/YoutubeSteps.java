@@ -11,8 +11,8 @@ public class YoutubeSteps extends YoutubePageObject {
         return this;
     }
     @Step("Enter search query")
-    public YoutubeSteps searchQuery1() {
-        SearchInput.click();
+    public YoutubeSteps ClickSearchButton() {
+        YoutubeSearchButton.click();
         return this;
     }
 }

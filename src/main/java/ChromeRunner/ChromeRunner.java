@@ -7,6 +7,7 @@ import org.testng.annotations.BeforeMethod;
 import com.codeborne.selenide.Selenide;
 
 
+
 public class ChromeRunner {
     private WebDriver driver;
 
@@ -18,10 +19,6 @@ public class ChromeRunner {
     public void setUp(){
         System.setProperty("webdriver.chrome.driver", "/Users/b.enukidze/Documents/Youtube/src/main/resources/chromedriver");
         Selenide.open("https://youtube.com/");
-    }
-
-    public WebElement findElement(By by) {
-        return driver.findElement(by);
     }
 
     @AfterMethod (description = "Close browser and clear cookies")
