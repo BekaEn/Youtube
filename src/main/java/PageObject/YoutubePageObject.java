@@ -9,10 +9,8 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class YoutubePageObject {
     public SelenideElement SearchInput = $(By.cssSelector(".ytd-searchbox-spt #search"));
-    public SelenideElement YoutubeSearchButton = $(By.id("search-icon-legacy"));
-    public SelenideElement YoutubeClickVideo = $(By.xpath("//a[@title='" + YoutubeData.TitleVideo + "']"));
+    public SelenideElement youtubeSearchButton = $(By.id("search-icon-legacy"));
+    public SelenideElement youtubeClickVideo = $(By.xpath("//a[@title='" + YoutubeData.TitleVideo + "']"));
     public SelenideElement ClickSubscribe = $(By.xpath("//*[@id='subscribe-button-shape']"));
-    public SelenideElement SearchInput() {
-        return SearchInput;
-    }
+    
 }

@@ -12,14 +12,14 @@ public class YoutubeSteps extends YoutubePageObject {
     }
 
     @Step("Click on Search button")
-    public YoutubeSteps clickSearch() {
-        YoutubeSearchButton.click();
+    public YoutubeSteps YoutubeSearchButton() {
+        youtubeSearchButton.click();
         return this;
     }
 
     @Step("Click on the video")
-    public YoutubeSteps clickVideo() {
-        YoutubeClickVideo.click();
+    public YoutubeSteps YoutubeClickVideo() {
+        youtubeClickVideo.click();
         return this;
     }
 
