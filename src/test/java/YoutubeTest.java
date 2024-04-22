@@ -11,9 +11,9 @@ import org.testng.Assert;
 
 public class YoutubeTest extends ChromeRunner implements YoutubeData {
     @Test()
-@Step("Check that Subscribe button working properly")
-@Description("This test will search for a video, click on it, and subscribe to the channel")
-@Severity(SeverityLevel.CRITICAL)
+    @Step("Check that Subscribe button working properly")
+    @Description("This test will search for a video, click on it, and subscribe to the channel")
+    @Severity(SeverityLevel.CRITICAL)
     public void Subscribe() {
     String testCaseId = "TEST CASE ID"; 
     // The test case ID is the ID of the test case in TestRail
@@ -39,10 +39,10 @@ public class YoutubeTest extends ChromeRunner implements YoutubeData {
         TestRailConnector.addResultForTest(testCaseId, 5, "Test failed: " + e.getMessage());
     }
 }
-@Test()
-@Step("Check that Settings button working properly")
-@Description("This test will click on the settings button")
-@Severity(SeverityLevel.CRITICAL)
+    @Test()
+    @Step("Check that Settings button working properly")
+    @Description("This test will click on the settings button")
+    @Severity(SeverityLevel.CRITICAL)
     public void Settings() {
     String testCaseId = "TEST CASE ID"; 
     // The test case ID is the ID of the test case in TestRail
