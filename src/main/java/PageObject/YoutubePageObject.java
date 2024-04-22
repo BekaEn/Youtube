@@ -12,4 +12,5 @@ public class YoutubePageObject {
     public SelenideElement youtubeSearchButton = $(By.id("search-icon-legacy"));
     public SelenideElement youtubeClickVideo = $(By.xpath("//a[@title='" + YoutubeData.TitleVideo + "']"));
     public SelenideElement ClickSubscribe = $(By.xpath("//*[@id='subscribe-button-shape']"));
+    public SelenideElement settings = $(By.xpath("//a[@title='Settings']"));
 }

@@ -28,4 +28,9 @@ public class YoutubeSteps extends YoutubePageObject {
         ClickSubscribe.click();
         return this;
     }
+    @Step("Click on the settings button")
+    public YoutubeSteps clickSettings() {
+        settings.click();
+        return this;
+    }
 }
