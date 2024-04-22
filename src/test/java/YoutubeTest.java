@@ -11,7 +11,7 @@ import org.testng.Assert;
 
 public class YoutubeTest extends ChromeRunner implements YoutubeData {
     @Test()
-@Step("Subscribe Test")
+@Step("Check that Subscribe button working properly")
 @Description("This test will search for a video, click on it, and subscribe to the channel")
 @Severity(SeverityLevel.CRITICAL)
     public void Subscribe() {
@@ -40,7 +40,7 @@ public class YoutubeTest extends ChromeRunner implements YoutubeData {
     }
 }
 @Test()
-@Step("Settings Test")
+@Step("Check that Settings button working properly")
 @Description("This test will click on the settings button")
 @Severity(SeverityLevel.CRITICAL)
     public void Settings() {

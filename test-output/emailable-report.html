@@ -9,10 +9,47 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">YoutubeSuite</th></tr>
-<tr><td><a href="#t0">YoutubeTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">17,098</td><td></td><td></td></tr>
+<tr><td><a href="#t0">YoutubeTest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">23,601</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">YoutubeSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">YoutubeTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">YoutubeTest</td><td><a href="#m0">Subscribe</a></td><td rowspan="1">1713780968923</td><td rowspan="1">12544</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">YoutubeSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">YoutubeTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">YoutubeTest</td><td><a href="#m0">Settings</a></td><td rowspan="1">1713784071453</td><td rowspan="1">6219</td></tr><tr class="failedeven"><td><a href="#m1">Subscribe</a></td><td rowspan="1">1713784078441</td><td rowspan="1">12646</td></tr></tbody>
 </table>
-<h2>YoutubeTest</h2><h3 id="m0">YoutubeTest#Subscribe</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>YoutubeTest</h2><h3 id="m0">YoutubeTest#Settings</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.net.URISyntaxException: Illegal character in hostname at index 12: https://your_testrail_instance.testrail.io/index.php?
+	at com.mashape.unirest.http.HttpClientHelper.prepareRequest(HttpClientHelper.java:183)
+	at com.mashape.unirest.http.HttpClientHelper.request(HttpClientHelper.java:131)
+	at com.mashape.unirest.request.BaseRequest.asString(BaseRequest.java:56)
+	at TestRailConnector.addResultForTest(TestRailConnector.java:32)
+	at YoutubeTest.Settings(YoutubeTest.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at test.main(test.java:9)
+Caused by: java.net.URISyntaxException: Illegal character in hostname at index 12: https://your_testrail_instance.testrail.io/index.php?
+	at java.base/java.net.URI$Parser.fail(URI.java:2995)
+	at java.base/java.net.URI$Parser.parseHostname(URI.java:3547)
+	at java.base/java.net.URI$Parser.parseServer(URI.java:3394)
+	at java.base/java.net.URI$Parser.parseAuthority(URI.java:3304)
+	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3240)
+	at java.base/java.net.URI$Parser.parse(URI.java:3196)
+	at java.base/java.net.URI.&lt;init&gt;(URI.java:732)
+	at com.mashape.unirest.http.HttpClientHelper.prepareRequest(HttpClientHelper.java:172)
+	... 28 more
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">YoutubeTest#Subscribe</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.net.URISyntaxException: Illegal character in hostname at index 12: https://your_testrail_instance.testrail.io/index.php?
+	at com.mashape.unirest.http.HttpClientHelper.prepareRequest(HttpClientHelper.java:183)
+	at com.mashape.unirest.http.HttpClientHelper.request(HttpClientHelper.java:131)
+	at com.mashape.unirest.request.BaseRequest.asString(BaseRequest.java:56)
+	at TestRailConnector.addResultForTest(TestRailConnector.java:32)
+	at YoutubeTest.Subscribe(YoutubeTest.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at test.main(test.java:9)
+Caused by: java.net.URISyntaxException: Illegal character in hostname at index 12: https://your_testrail_instance.testrail.io/index.php?
+	at java.base/java.net.URI$Parser.fail(URI.java:2995)
+	at java.base/java.net.URI$Parser.parseHostname(URI.java:3547)
+	at java.base/java.net.URI$Parser.parseServer(URI.java:3394)
+	at java.base/java.net.URI$Parser.parseAuthority(URI.java:3304)
+	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3240)
+	at java.base/java.net.URI$Parser.parse(URI.java:3196)
+	at java.base/java.net.URI.&lt;init&gt;(URI.java:732)
+	at com.mashape.unirest.http.HttpClientHelper.prepareRequest(HttpClientHelper.java:172)
+	... 28 more
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

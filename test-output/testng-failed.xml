@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [YoutubeSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="YoutubeTest(failed)">
+    <classes>
+      <class name="YoutubeTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="Subscribe"/>
+          <include name="Settings"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- YoutubeTest -->
+    </classes>
+  </test> <!-- YoutubeTest(failed) -->
+</suite> <!-- Failed suite [YoutubeSuite] -->
