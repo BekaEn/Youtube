@@ -27,7 +27,9 @@ import org.testng.Assert;
         TestUtils.pause(5000);   
         youtubeSteps.clickSubscribe();
         // Subscribe to the channel
-        TestUtils.pause(5000);   
+        TestUtils.pause(3000);   
+
+        
         Assert.assertEquals("Sign in to subscribe to this channel", "Sign in to subscribe to this channel");
         // Check if the popup is visible
         }
