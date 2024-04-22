@@ -6,6 +6,8 @@ import ChromeRunner.ChromeRunner;
 import org.testng.annotations.Test;
 import SmallerVersions.TestUtils;
 import io.qameta.allure.Description; 
+import org.testng.Assert;
+
 
     public class YoutubeTest extends ChromeRunner implements YoutubeData {
         @Test
@@ -25,7 +27,8 @@ import io.qameta.allure.Description;
         TestUtils.pause(5000);   
         youtubeSteps.clickSubscribe();
         // Subscribe to the channel
-        TestUtils.pause(3000);   
-}
+        Assert.assertTrue(youtubeSteps.isSubscribePopupVisible(), "Subscribe popup is not visible");
+        // Check if the popup is visible
+        
     
 }
