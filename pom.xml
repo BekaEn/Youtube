@@ -58,6 +58,14 @@
         <version>7.2.0</version> <!-- Update this to the latest version -->
         
     </dependency>
+   
+         
+    <dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.9.0</version>
+    
+</dependency>
 
 </dependencies>
 
