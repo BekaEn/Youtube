@@ -27,8 +27,7 @@ import org.testng.Assert;
         TestUtils.pause(5000);   
         youtubeSteps.clickSubscribe();
         // Subscribe to the channel
-        Assert.assertTrue(youtubeSteps.isSubscribePopupVisible(), "Subscribe popup is not visible");
+        Assert.assertEquals("Sign in to subscribe to this channel", "Unexpected popup text");
         // Check if the popup is visible
-        
-    
+        }
 }
