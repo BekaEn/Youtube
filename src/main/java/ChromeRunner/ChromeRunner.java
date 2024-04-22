@@ -11,13 +11,13 @@ public class ChromeRunner {
         return driver;
     }
 
-    @BeforeMethod (description = "configure browser before tests")
+    @BeforeMethod ()
     public void setUp(){
         System.setProperty("chrome.driver", "/Users/b.enukidze/Documents/Youtube/src/main/resources/chromedriver");
         Selenide.open("https://youtube.com/");
     }
 
-    @AfterMethod (description = "Close browser and clear cookies")
+    @AfterMethod ()
     public void tearDown(){
         if (driver != null) {
             driver.manage().deleteAllCookies();
