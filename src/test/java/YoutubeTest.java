@@ -15,7 +15,8 @@ public class YoutubeTest extends ChromeRunner implements YoutubeData {
 @Description("This test will search for a video, click on it, and subscribe to the channel")
 @Severity(SeverityLevel.CRITICAL)
 public void Subscribe() {
-    String testCaseId = "your_test_case_id"; // Replace with your actual TestRail test case ID
+    String testCaseId = "TEST CASE ID"; 
+    // The test case ID is the ID of the test case in TestRail
 
     YoutubeSteps youtubeSteps = new YoutubeSteps();
 
