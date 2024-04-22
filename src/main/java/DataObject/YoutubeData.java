@@ -2,6 +2,6 @@
 package DataObject;
 
 public interface YoutubeData {
-    String searchQuery = "LISTEN EVERYDAY! I AM affirmations for coding|ComputerProgramming Affirmations|Coding Affirmations";
-    String TitleVideo = "11 Minute Affirmations for Instant Manifestation | I Am Creator Listen to Every Day!";
+    String searchQuery = "The psychology of self-motivation | Scott Geller";
+    String TitleVideo = "The psychology of self-motivation | Scott Geller | TEDxVirginiaTech";
 }

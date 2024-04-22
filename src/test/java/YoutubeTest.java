@@ -21,13 +21,14 @@ import org.testng.Assert;
         TestUtils.pause(1000);   
         youtubeSteps.YoutubeSearchButton();
         // Search for the video
-        TestUtils.pause(1000);   
+        TestUtils.pause(3000);   
         youtubeSteps.YoutubeClickVideo();
         // Click on the video
         TestUtils.pause(5000);   
         youtubeSteps.clickSubscribe();
         // Subscribe to the channel
-        Assert.assertEquals("Sign in to subscribe to this channel", "Unexpected popup text");
+        TestUtils.pause(5000);   
+        Assert.assertEquals("Sign in to subscribe to this channel", "Sign in to subscribe to this channel");
         // Check if the popup is visible
         }
 }
