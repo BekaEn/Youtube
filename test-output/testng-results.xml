@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-22T15:07:47 GET" name="YoutubeSuite" finished-at="2024-04-22T15:08:11 GET" duration-ms="23601">
+  <suite started-at="2024-04-23T06:30:21 GET" name="YoutubeSuite" finished-at="2024-04-23T06:30:46 GET" duration-ms="24709">
     <groups>
     </groups>
-    <test started-at="2024-04-22T15:07:47 GET" name="YoutubeTest" finished-at="2024-04-22T15:08:11 GET" duration-ms="23601">
+    <test started-at="2024-04-23T06:30:21 GET" name="YoutubeTest" finished-at="2024-04-23T06:30:46 GET" duration-ms="24709">
       <class name="YoutubeTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:YoutubeTest@24c1b2d2]" started-at="2024-04-22T15:07:47 GET" name="setUp" finished-at="2024-04-22T15:07:51 GET" duration-ms="3917" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:YoutubeTest@24c1b2d2]" started-at="2024-04-23T06:30:21 GET" name="setUp" finished-at="2024-04-23T06:30:27 GET" duration-ms="5252" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Settings()[pri:0, instance:YoutubeTest@24c1b2d2]" started-at="2024-04-22T15:07:51 GET" name="Settings" finished-at="2024-04-22T15:07:57 GET" duration-ms="6219" status="FAIL">
+        <test-method signature="Settings()[pri:0, instance:YoutubeTest@24c1b2d2]" started-at="2024-04-23T06:30:27 GET" name="Settings" finished-at="2024-04-23T06:30:33 GET" duration-ms="6186" status="FAIL">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[java.net.URISyntaxException: Illegal character in hostname at index 12: https://your_testrail_instance.testrail.io/index.php?]]>
@@ -46,7 +46,7 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
 at org.testng.TestNG.runSuites(TestNG.java:1134)
 at org.testng.TestNG.run(TestNG.java:1101)
-at test.main(test.java:9)
+at Test.main(Test.java:9)
 Caused by: java.net.URISyntaxException: Illegal character in hostname at index 12: https://your_testrail_instance.testrail.io/index.php?
 at java.base/java.net.URI$Parser.fail(URI.java:2995)
 at java.base/java.net.URI$Parser.parseHostname(URI.java:3547)
@@ -63,15 +63,15 @@ at com.mashape.unirest.http.HttpClientHelper.prepareRequest(HttpClientHelper.jav
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Settings -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:YoutubeTest@24c1b2d2]" started-at="2024-04-22T15:07:57 GET" name="tearDown" finished-at="2024-04-22T15:07:57 GET" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:YoutubeTest@24c1b2d2]" started-at="2024-04-23T06:30:33 GET" name="tearDown" finished-at="2024-04-23T06:30:33 GET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:YoutubeTest@24c1b2d2]" started-at="2024-04-22T15:07:57 GET" name="setUp" finished-at="2024-04-22T15:07:58 GET" duration-ms="760" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:YoutubeTest@24c1b2d2]" started-at="2024-04-23T06:30:33 GET" name="setUp" finished-at="2024-04-23T06:30:34 GET" duration-ms="776" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Subscribe()[pri:0, instance:YoutubeTest@24c1b2d2]" started-at="2024-04-22T15:07:58 GET" name="Subscribe" finished-at="2024-04-22T15:08:11 GET" duration-ms="12646" status="FAIL">
+        <test-method signature="Subscribe()[pri:0, instance:YoutubeTest@24c1b2d2]" started-at="2024-04-23T06:30:34 GET" name="Subscribe" finished-at="2024-04-23T06:30:46 GET" duration-ms="12433" status="FAIL">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[java.net.URISyntaxException: Illegal character in hostname at index 12: https://your_testrail_instance.testrail.io/index.php?]]>
@@ -106,7 +106,7 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
 at org.testng.TestNG.runSuites(TestNG.java:1134)
 at org.testng.TestNG.run(TestNG.java:1101)
-at test.main(test.java:9)
+at Test.main(Test.java:9)
 Caused by: java.net.URISyntaxException: Illegal character in hostname at index 12: https://your_testrail_instance.testrail.io/index.php?
 at java.base/java.net.URI$Parser.fail(URI.java:2995)
 at java.base/java.net.URI$Parser.parseHostname(URI.java:3547)
@@ -123,7 +123,7 @@ at com.mashape.unirest.http.HttpClientHelper.prepareRequest(HttpClientHelper.jav
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Subscribe -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:YoutubeTest@24c1b2d2]" started-at="2024-04-22T15:08:11 GET" name="tearDown" finished-at="2024-04-22T15:08:11 GET" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:YoutubeTest@24c1b2d2]" started-at="2024-04-23T06:30:46 GET" name="tearDown" finished-at="2024-04-23T06:30:46 GET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
