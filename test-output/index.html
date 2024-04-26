@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-YoutubeSuite" class="navigator-link">
-              <span class="suite-name border-failed">YoutubeSuite</span>
+              <span class="suite-name border-skipped">YoutubeSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,26 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">2 methods,  2 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-YoutubeSuite" class="hide-methods failed suite-YoutubeSuite"> (hide)</a> <!-- hide-methods failed suite-YoutubeSuite -->
-                      <a href="#" panel-name="suite-YoutubeSuite" class="show-methods failed suite-YoutubeSuite"> (show)</a> <!-- show-methods failed suite-YoutubeSuite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-YoutubeSuite" class="hide-methods skipped suite-YoutubeSuite"> (hide)</a> <!-- hide-methods skipped suite-YoutubeSuite -->
+                      <a href="#" panel-name="suite-YoutubeSuite" class="show-methods skipped suite-YoutubeSuite"> (show)</a> <!-- show-methods skipped suite-YoutubeSuite -->
                     </span>
-                    <div class="method-list-content failed suite-YoutubeSuite">
+                    <div class="method-list-content skipped suite-YoutubeSuite">
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-YoutubeSuite" title="YoutubeTest" class="method navigator-link" hash-for-method="Settings">Settings</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-YoutubeSuite" title="YoutubeTest" class="method navigator-link" hash-for-method="Subscribe">Subscribe</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-YoutubeSuite -->
+                    </div> <!-- method-list-content skipped suite-YoutubeSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -123,9 +123,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-YoutubeSuite" class="panel YoutubeSuite">
-          <div class="suite-YoutubeSuite-class-failed">
+          <div class="suite-YoutubeSuite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">YoutubeTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -134,25 +134,51 @@
                   <a name="Settings">
                   </a> <!-- Settings -->
                   <span class="method-name">Settings</span>
-                  <div class="stack-trace">java.lang.RuntimeException: java.net.URISyntaxException: Illegal character in hostname at index 12: https://your_testrail_instance.testrail.io/index.php?
-	at com.mashape.unirest.http.HttpClientHelper.prepareRequest(HttpClientHelper.java:183)
-	at com.mashape.unirest.http.HttpClientHelper.request(HttpClientHelper.java:131)
-	at com.mashape.unirest.request.BaseRequest.asString(BaseRequest.java:56)
-	at TestRailConnector.addResultForTest(TestRailConnector.java:32)
-	at YoutubeTest.Settings(YoutubeTest.java:60)
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: disconnected: unable to connect to renderer 
+Host info: host: &apos;B-Enukidzes-MBP&apos;, ip: &apos;192.168.1.217&apos;
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.3.1&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--proxy-bypass-list=&lt;-loopb..., --disable-dev-shm-usage, --window-size=1366,768], binary: /Users/b.enukidze/.cache/se..., excludeSwitches: [enable-automation, load-extension], extensions: [], prefs: {credentials_enable_service: false, download.default_directory: /Users/b.enukidze/Documents..., plugins.always_open_pdf_externally: true, profile.default_content_setting_values.automatic_downloads: 1, profile.password_manager_enabled: false, safebrowsing.enabled: true}}, pageLoadStrategy: normal, unhandledPromptBehavior: accept}]}]
+selenide.url: https://youtube.com/
+selenide.baseUrl: http://localhost:8080
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:139)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:95)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:233)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:162)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
+	at com.codeborne.selenide.webdriver.ChromeDriverFactory.create(ChromeDriverFactory.java:34)
+	at com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriverInstance(WebDriverFactory.java:117)
+	at com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriver(WebDriverFactory.java:67)
+	at com.codeborne.selenide.drivercommands.CreateDriverCommand.lambda$createDriver$0(CreateDriverCommand.java:72)
+	at com.codeborne.selenide.logevents.SelenideLogger.wrap(SelenideLogger.java:133)
+	at com.codeborne.selenide.logevents.SelenideLogger.get(SelenideLogger.java:113)
+	at com.codeborne.selenide.drivercommands.CreateDriverCommand.createDriver(CreateDriverCommand.java:48)
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createDriver(WebDriverThreadLocalContainer.java:189)
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createAndRegisterDriver(WebDriverThreadLocalContainer.java:174)
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.getAndCheckWebDriver(WebDriverThreadLocalContainer.java:136)
+	at com.codeborne.selenide.WebDriverRunner.getAndCheckWebDriver(WebDriverRunner.java:113)
+	at com.codeborne.selenide.impl.StaticDriver.getAndCheckWebDriver(StaticDriver.java:65)
+	at com.codeborne.selenide.SelenideDriver.getAndCheckWebDriver(SelenideDriver.java:211)
+	at com.codeborne.selenide.drivercommands.Navigator.lambda$navigateTo$0(Navigator.java:70)
+	at com.codeborne.selenide.logevents.SelenideLogger.lambda$run$0(SelenideLogger.java:105)
+	at com.codeborne.selenide.logevents.SelenideLogger.wrap(SelenideLogger.java:133)
+	at com.codeborne.selenide.logevents.SelenideLogger.run(SelenideLogger.java:104)
+	at com.codeborne.selenide.drivercommands.Navigator.navigateTo(Navigator.java:68)
+	at com.codeborne.selenide.drivercommands.Navigator.open(Navigator.java:31)
+	at com.codeborne.selenide.SelenideDriver.open(SelenideDriver.java:93)
+	at com.codeborne.selenide.Selenide.open(Selenide.java:53)
+	at ChromeRunner.ChromeRunner.setUp(ChromeRunner.java:17)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at Test.main(Test.java:9)
-Caused by: java.net.URISyntaxException: Illegal character in hostname at index 12: https://your_testrail_instance.testrail.io/index.php?
-	at java.base/java.net.URI$Parser.fail(URI.java:2995)
-	at java.base/java.net.URI$Parser.parseHostname(URI.java:3547)
-	at java.base/java.net.URI$Parser.parseServer(URI.java:3394)
-	at java.base/java.net.URI$Parser.parseAuthority(URI.java:3304)
-	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3240)
-	at java.base/java.net.URI$Parser.parse(URI.java:3196)
-	at java.base/java.net.URI.&lt;init&gt;(URI.java:732)
-	at com.mashape.unirest.http.HttpClientHelper.prepareRequest(HttpClientHelper.java:172)
-	... 28 more
-... Removed 22 stack frames
+... Removed 26 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -161,30 +187,56 @@ Caused by: java.net.URISyntaxException: Illegal character in hostname at index 1
                   <a name="Subscribe">
                   </a> <!-- Subscribe -->
                   <span class="method-name">Subscribe</span>
-                  <div class="stack-trace">java.lang.RuntimeException: java.net.URISyntaxException: Illegal character in hostname at index 12: https://your_testrail_instance.testrail.io/index.php?
-	at com.mashape.unirest.http.HttpClientHelper.prepareRequest(HttpClientHelper.java:183)
-	at com.mashape.unirest.http.HttpClientHelper.request(HttpClientHelper.java:131)
-	at com.mashape.unirest.request.BaseRequest.asString(BaseRequest.java:56)
-	at TestRailConnector.addResultForTest(TestRailConnector.java:32)
-	at YoutubeTest.Subscribe(YoutubeTest.java:36)
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: disconnected: unable to connect to renderer 
+Host info: host: &apos;B-Enukidzes-MBP&apos;, ip: &apos;192.168.1.217&apos;
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.3.1&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--proxy-bypass-list=&lt;-loopb..., --disable-dev-shm-usage, --window-size=1366,768], binary: /Users/b.enukidze/.cache/se..., excludeSwitches: [enable-automation, load-extension], extensions: [], prefs: {credentials_enable_service: false, download.default_directory: /Users/b.enukidze/Documents..., plugins.always_open_pdf_externally: true, profile.default_content_setting_values.automatic_downloads: 1, profile.password_manager_enabled: false, safebrowsing.enabled: true}}, pageLoadStrategy: normal, unhandledPromptBehavior: accept}]}]
+selenide.url: https://youtube.com/
+selenide.baseUrl: http://localhost:8080
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:139)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:95)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:233)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:162)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
+	at com.codeborne.selenide.webdriver.ChromeDriverFactory.create(ChromeDriverFactory.java:34)
+	at com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriverInstance(WebDriverFactory.java:117)
+	at com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriver(WebDriverFactory.java:67)
+	at com.codeborne.selenide.drivercommands.CreateDriverCommand.lambda$createDriver$0(CreateDriverCommand.java:72)
+	at com.codeborne.selenide.logevents.SelenideLogger.wrap(SelenideLogger.java:133)
+	at com.codeborne.selenide.logevents.SelenideLogger.get(SelenideLogger.java:113)
+	at com.codeborne.selenide.drivercommands.CreateDriverCommand.createDriver(CreateDriverCommand.java:48)
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createDriver(WebDriverThreadLocalContainer.java:189)
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createAndRegisterDriver(WebDriverThreadLocalContainer.java:174)
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.getAndCheckWebDriver(WebDriverThreadLocalContainer.java:136)
+	at com.codeborne.selenide.WebDriverRunner.getAndCheckWebDriver(WebDriverRunner.java:113)
+	at com.codeborne.selenide.impl.StaticDriver.getAndCheckWebDriver(StaticDriver.java:65)
+	at com.codeborne.selenide.SelenideDriver.getAndCheckWebDriver(SelenideDriver.java:211)
+	at com.codeborne.selenide.drivercommands.Navigator.lambda$navigateTo$0(Navigator.java:70)
+	at com.codeborne.selenide.logevents.SelenideLogger.lambda$run$0(SelenideLogger.java:105)
+	at com.codeborne.selenide.logevents.SelenideLogger.wrap(SelenideLogger.java:133)
+	at com.codeborne.selenide.logevents.SelenideLogger.run(SelenideLogger.java:104)
+	at com.codeborne.selenide.drivercommands.Navigator.navigateTo(Navigator.java:68)
+	at com.codeborne.selenide.drivercommands.Navigator.open(Navigator.java:31)
+	at com.codeborne.selenide.SelenideDriver.open(SelenideDriver.java:93)
+	at com.codeborne.selenide.Selenide.open(Selenide.java:53)
+	at ChromeRunner.ChromeRunner.setUp(ChromeRunner.java:17)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at Test.main(Test.java:9)
-Caused by: java.net.URISyntaxException: Illegal character in hostname at index 12: https://your_testrail_instance.testrail.io/index.php?
-	at java.base/java.net.URI$Parser.fail(URI.java:2995)
-	at java.base/java.net.URI$Parser.parseHostname(URI.java:3547)
-	at java.base/java.net.URI$Parser.parseServer(URI.java:3394)
-	at java.base/java.net.URI$Parser.parseAuthority(URI.java:3304)
-	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3240)
-	at java.base/java.net.URI$Parser.parse(URI.java:3196)
-	at java.base/java.net.URI.&lt;init&gt;(URI.java:732)
-	at com.mashape.unirest.http.HttpClientHelper.prepareRequest(HttpClientHelper.java:172)
-	... 28 more
-... Removed 22 stack frames
+... Removed 26 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-YoutubeSuite-class-failed -->
+          </div> <!-- suite-YoutubeSuite-class-skipped -->
         </div> <!-- panel YoutubeSuite -->
         <div panel-name="test-xml-YoutubeSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -239,18 +291,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Subscribe')
+data.setCell(0, 1, 'Settings')
 data.setCell(0, 2, 'YoutubeTest')
-data.setCell(0, 3, 12433);
+data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Settings')
+data.setCell(1, 1, 'Subscribe')
 data.setCell(1, 2, 'YoutubeTest')
-data.setCell(1, 3, 6186);
+data.setCell(1, 3, 0);
 window.suiteTableData['YoutubeSuite']= { tableData: data, tableDiv: 'times-div-YoutubeSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-YoutubeSuite">
               </div> <!-- times-div-YoutubeSuite -->
             </div> <!-- times-div -->
@@ -278,32 +330,30 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">YoutubeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">Settings</span>
-                <span class="method-start">5286 ms</span>
+                <span class="method-start">2040 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11480 ms</span>
+                <span class="method-start">2043 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Subscribe</span>
+                <span class="method-start">2044 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">11482 ms</span>
+                <span class="method-start">2044 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">Subscribe</span>
-                <span class="method-start">12259 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">24695 ms</span>
+                <span class="method-start">2046 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

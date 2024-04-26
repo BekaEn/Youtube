@@ -9,47 +9,147 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">YoutubeSuite</th></tr>
-<tr><td><a href="#t0">YoutubeTest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">24,709</td><td></td><td></td></tr>
+<tr><td><a href="#t0">YoutubeTest</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">2,060</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">YoutubeSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">YoutubeTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">YoutubeTest</td><td><a href="#m0">Settings</a></td><td rowspan="1">1713839427276</td><td rowspan="1">6186</td></tr><tr class="failedeven"><td><a href="#m1">Subscribe</a></td><td rowspan="1">1713839434249</td><td rowspan="1">12433</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">YoutubeSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">YoutubeTest &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">YoutubeTest</td><td><a href="#m0">setUp</a></td><td rowspan="1">1713886480994</td><td rowspan="1">1996</td></tr><tr><th colspan="4">YoutubeTest &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="3">YoutubeTest</td><td><a href="#m1">setUp</a></td><td rowspan="1">1713886483038</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">tearDown</a></td><td rowspan="2">1713886483037</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m3">tearDown</a></td></tr><tr><th colspan="4">YoutubeTest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">YoutubeTest</td><td><a href="#m4">Settings</a></td><td rowspan="1">1713886483034</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m5">Subscribe</a></td><td rowspan="1">1713886483038</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>YoutubeTest</h2><h3 id="m0">YoutubeTest#Settings</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.net.URISyntaxException: Illegal character in hostname at index 12: https://your_testrail_instance.testrail.io/index.php?
-	at com.mashape.unirest.http.HttpClientHelper.prepareRequest(HttpClientHelper.java:183)
-	at com.mashape.unirest.http.HttpClientHelper.request(HttpClientHelper.java:131)
-	at com.mashape.unirest.request.BaseRequest.asString(BaseRequest.java:56)
-	at TestRailConnector.addResultForTest(TestRailConnector.java:32)
-	at YoutubeTest.Settings(YoutubeTest.java:60)
+<h2>YoutubeTest</h2><h3 id="m0">YoutubeTest#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: disconnected: unable to connect to renderer 
+Host info: host: &apos;B-Enukidzes-MBP&apos;, ip: &apos;192.168.1.217&apos;
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.3.1&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--proxy-bypass-list=&lt;-loopb..., --disable-dev-shm-usage, --window-size=1366,768], binary: /Users/b.enukidze/.cache/se..., excludeSwitches: [enable-automation, load-extension], extensions: [], prefs: {credentials_enable_service: false, download.default_directory: /Users/b.enukidze/Documents..., plugins.always_open_pdf_externally: true, profile.default_content_setting_values.automatic_downloads: 1, profile.password_manager_enabled: false, safebrowsing.enabled: true}}, pageLoadStrategy: normal, unhandledPromptBehavior: accept}]}]
+selenide.url: https://youtube.com/
+selenide.baseUrl: http://localhost:8080
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:139)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:95)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:233)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:162)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
+	at com.codeborne.selenide.webdriver.ChromeDriverFactory.create(ChromeDriverFactory.java:34)
+	at com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriverInstance(WebDriverFactory.java:117)
+	at com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriver(WebDriverFactory.java:67)
+	at com.codeborne.selenide.drivercommands.CreateDriverCommand.lambda$createDriver$0(CreateDriverCommand.java:72)
+	at com.codeborne.selenide.logevents.SelenideLogger.wrap(SelenideLogger.java:133)
+	at com.codeborne.selenide.logevents.SelenideLogger.get(SelenideLogger.java:113)
+	at com.codeborne.selenide.drivercommands.CreateDriverCommand.createDriver(CreateDriverCommand.java:48)
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createDriver(WebDriverThreadLocalContainer.java:189)
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createAndRegisterDriver(WebDriverThreadLocalContainer.java:174)
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.getAndCheckWebDriver(WebDriverThreadLocalContainer.java:136)
+	at com.codeborne.selenide.WebDriverRunner.getAndCheckWebDriver(WebDriverRunner.java:113)
+	at com.codeborne.selenide.impl.StaticDriver.getAndCheckWebDriver(StaticDriver.java:65)
+	at com.codeborne.selenide.SelenideDriver.getAndCheckWebDriver(SelenideDriver.java:211)
+	at com.codeborne.selenide.drivercommands.Navigator.lambda$navigateTo$0(Navigator.java:70)
+	at com.codeborne.selenide.logevents.SelenideLogger.lambda$run$0(SelenideLogger.java:105)
+	at com.codeborne.selenide.logevents.SelenideLogger.wrap(SelenideLogger.java:133)
+	at com.codeborne.selenide.logevents.SelenideLogger.run(SelenideLogger.java:104)
+	at com.codeborne.selenide.drivercommands.Navigator.navigateTo(Navigator.java:68)
+	at com.codeborne.selenide.drivercommands.Navigator.open(Navigator.java:31)
+	at com.codeborne.selenide.SelenideDriver.open(SelenideDriver.java:93)
+	at com.codeborne.selenide.Selenide.open(Selenide.java:53)
+	at ChromeRunner.ChromeRunner.setUp(ChromeRunner.java:17)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at Test.main(Test.java:9)
-Caused by: java.net.URISyntaxException: Illegal character in hostname at index 12: https://your_testrail_instance.testrail.io/index.php?
-	at java.base/java.net.URI$Parser.fail(URI.java:2995)
-	at java.base/java.net.URI$Parser.parseHostname(URI.java:3547)
-	at java.base/java.net.URI$Parser.parseServer(URI.java:3394)
-	at java.base/java.net.URI$Parser.parseAuthority(URI.java:3304)
-	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3240)
-	at java.base/java.net.URI$Parser.parse(URI.java:3196)
-	at java.base/java.net.URI.&lt;init&gt;(URI.java:732)
-	at com.mashape.unirest.http.HttpClientHelper.prepareRequest(HttpClientHelper.java:172)
-	... 28 more
-... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">YoutubeTest#Subscribe</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.net.URISyntaxException: Illegal character in hostname at index 12: https://your_testrail_instance.testrail.io/index.php?
-	at com.mashape.unirest.http.HttpClientHelper.prepareRequest(HttpClientHelper.java:183)
-	at com.mashape.unirest.http.HttpClientHelper.request(HttpClientHelper.java:131)
-	at com.mashape.unirest.request.BaseRequest.asString(BaseRequest.java:56)
-	at TestRailConnector.addResultForTest(TestRailConnector.java:32)
-	at YoutubeTest.Subscribe(YoutubeTest.java:36)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">YoutubeTest#setUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">YoutubeTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">YoutubeTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">YoutubeTest#Settings</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: disconnected: unable to connect to renderer 
+Host info: host: &apos;B-Enukidzes-MBP&apos;, ip: &apos;192.168.1.217&apos;
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.3.1&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--proxy-bypass-list=&lt;-loopb..., --disable-dev-shm-usage, --window-size=1366,768], binary: /Users/b.enukidze/.cache/se..., excludeSwitches: [enable-automation, load-extension], extensions: [], prefs: {credentials_enable_service: false, download.default_directory: /Users/b.enukidze/Documents..., plugins.always_open_pdf_externally: true, profile.default_content_setting_values.automatic_downloads: 1, profile.password_manager_enabled: false, safebrowsing.enabled: true}}, pageLoadStrategy: normal, unhandledPromptBehavior: accept}]}]
+selenide.url: https://youtube.com/
+selenide.baseUrl: http://localhost:8080
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:139)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:95)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:233)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:162)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
+	at com.codeborne.selenide.webdriver.ChromeDriverFactory.create(ChromeDriverFactory.java:34)
+	at com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriverInstance(WebDriverFactory.java:117)
+	at com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriver(WebDriverFactory.java:67)
+	at com.codeborne.selenide.drivercommands.CreateDriverCommand.lambda$createDriver$0(CreateDriverCommand.java:72)
+	at com.codeborne.selenide.logevents.SelenideLogger.wrap(SelenideLogger.java:133)
+	at com.codeborne.selenide.logevents.SelenideLogger.get(SelenideLogger.java:113)
+	at com.codeborne.selenide.drivercommands.CreateDriverCommand.createDriver(CreateDriverCommand.java:48)
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createDriver(WebDriverThreadLocalContainer.java:189)
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createAndRegisterDriver(WebDriverThreadLocalContainer.java:174)
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.getAndCheckWebDriver(WebDriverThreadLocalContainer.java:136)
+	at com.codeborne.selenide.WebDriverRunner.getAndCheckWebDriver(WebDriverRunner.java:113)
+	at com.codeborne.selenide.impl.StaticDriver.getAndCheckWebDriver(StaticDriver.java:65)
+	at com.codeborne.selenide.SelenideDriver.getAndCheckWebDriver(SelenideDriver.java:211)
+	at com.codeborne.selenide.drivercommands.Navigator.lambda$navigateTo$0(Navigator.java:70)
+	at com.codeborne.selenide.logevents.SelenideLogger.lambda$run$0(SelenideLogger.java:105)
+	at com.codeborne.selenide.logevents.SelenideLogger.wrap(SelenideLogger.java:133)
+	at com.codeborne.selenide.logevents.SelenideLogger.run(SelenideLogger.java:104)
+	at com.codeborne.selenide.drivercommands.Navigator.navigateTo(Navigator.java:68)
+	at com.codeborne.selenide.drivercommands.Navigator.open(Navigator.java:31)
+	at com.codeborne.selenide.SelenideDriver.open(SelenideDriver.java:93)
+	at com.codeborne.selenide.Selenide.open(Selenide.java:53)
+	at ChromeRunner.ChromeRunner.setUp(ChromeRunner.java:17)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at Test.main(Test.java:9)
-Caused by: java.net.URISyntaxException: Illegal character in hostname at index 12: https://your_testrail_instance.testrail.io/index.php?
-	at java.base/java.net.URI$Parser.fail(URI.java:2995)
-	at java.base/java.net.URI$Parser.parseHostname(URI.java:3547)
-	at java.base/java.net.URI$Parser.parseServer(URI.java:3394)
-	at java.base/java.net.URI$Parser.parseAuthority(URI.java:3304)
-	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3240)
-	at java.base/java.net.URI$Parser.parse(URI.java:3196)
-	at java.base/java.net.URI.&lt;init&gt;(URI.java:732)
-	at com.mashape.unirest.http.HttpClientHelper.prepareRequest(HttpClientHelper.java:172)
-	... 28 more
-... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">YoutubeTest#Subscribe</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: disconnected: unable to connect to renderer 
+Host info: host: &apos;B-Enukidzes-MBP&apos;, ip: &apos;192.168.1.217&apos;
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.3.1&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--proxy-bypass-list=&lt;-loopb..., --disable-dev-shm-usage, --window-size=1366,768], binary: /Users/b.enukidze/.cache/se..., excludeSwitches: [enable-automation, load-extension], extensions: [], prefs: {credentials_enable_service: false, download.default_directory: /Users/b.enukidze/Documents..., plugins.always_open_pdf_externally: true, profile.default_content_setting_values.automatic_downloads: 1, profile.password_manager_enabled: false, safebrowsing.enabled: true}}, pageLoadStrategy: normal, unhandledPromptBehavior: accept}]}]
+selenide.url: https://youtube.com/
+selenide.baseUrl: http://localhost:8080
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:139)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:95)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:233)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:162)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
+	at com.codeborne.selenide.webdriver.ChromeDriverFactory.create(ChromeDriverFactory.java:34)
+	at com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriverInstance(WebDriverFactory.java:117)
+	at com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriver(WebDriverFactory.java:67)
+	at com.codeborne.selenide.drivercommands.CreateDriverCommand.lambda$createDriver$0(CreateDriverCommand.java:72)
+	at com.codeborne.selenide.logevents.SelenideLogger.wrap(SelenideLogger.java:133)
+	at com.codeborne.selenide.logevents.SelenideLogger.get(SelenideLogger.java:113)
+	at com.codeborne.selenide.drivercommands.CreateDriverCommand.createDriver(CreateDriverCommand.java:48)
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createDriver(WebDriverThreadLocalContainer.java:189)
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createAndRegisterDriver(WebDriverThreadLocalContainer.java:174)
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.getAndCheckWebDriver(WebDriverThreadLocalContainer.java:136)
+	at com.codeborne.selenide.WebDriverRunner.getAndCheckWebDriver(WebDriverRunner.java:113)
+	at com.codeborne.selenide.impl.StaticDriver.getAndCheckWebDriver(StaticDriver.java:65)
+	at com.codeborne.selenide.SelenideDriver.getAndCheckWebDriver(SelenideDriver.java:211)
+	at com.codeborne.selenide.drivercommands.Navigator.lambda$navigateTo$0(Navigator.java:70)
+	at com.codeborne.selenide.logevents.SelenideLogger.lambda$run$0(SelenideLogger.java:105)
+	at com.codeborne.selenide.logevents.SelenideLogger.wrap(SelenideLogger.java:133)
+	at com.codeborne.selenide.logevents.SelenideLogger.run(SelenideLogger.java:104)
+	at com.codeborne.selenide.drivercommands.Navigator.navigateTo(Navigator.java:68)
+	at com.codeborne.selenide.drivercommands.Navigator.open(Navigator.java:31)
+	at com.codeborne.selenide.SelenideDriver.open(SelenideDriver.java:93)
+	at com.codeborne.selenide.Selenide.open(Selenide.java:53)
+	at ChromeRunner.ChromeRunner.setUp(ChromeRunner.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at Test.main(Test.java:9)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

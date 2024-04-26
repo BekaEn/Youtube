@@ -13,7 +13,7 @@ public class ChromeRunner {
 
     @BeforeMethod ()
     public void setUp(){
-        System.setProperty("chrome.driver", "/Users/b.enukidze/Documents/Youtube/src/main/resources/chromedriver");
+        System.setProperty("chrome.driver", "src/main/resources/chromedriver");
         Selenide.open("https://youtube.com/");
     }
 
