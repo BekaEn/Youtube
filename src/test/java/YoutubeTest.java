@@ -45,7 +45,7 @@ public class YoutubeTest extends ChromeRunner implements YoutubeData {
     @Severity(SeverityLevel.CRITICAL)
     public void Settings() {
     String testCaseId = "TEST CASE ID"; 
-    // The test case ID is the ID of the test case in TestRail
+    // The test case ID is the ID of the test case in TestRail.
 
     YoutubeSteps youtubeSteps = new YoutubeSteps();
 
